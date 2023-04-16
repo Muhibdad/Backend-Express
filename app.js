@@ -3,9 +3,9 @@ const app=express();
 const morgan=require('morgan');
 // const tourRouter = require('./Routes/TourRoutes');
 
-if(process.env.NODE_ENV==='development'){
-app.use(morgan('dev'));
-}
+// if(process.env.NODE_ENV==='development'){
+// app.use(morgan('dev'));
+// }
 
 const tourRouter=require('./Routes/TourRoutes');
 const userRouter=require('./Routes/UserRoutes');

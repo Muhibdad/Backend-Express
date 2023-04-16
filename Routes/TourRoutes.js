@@ -4,13 +4,12 @@ const tourController=require('./../Controllers/TourController');
 const router=express.Router();
 // const tourRouter=express.Router();
 
-router.param('id',tourController.checkID);
-
+// router.param('id',tourController.checkID);
 
 
 router.route('/')
 .get(tourController.getAllTours)
-.post(tourController.checkBody,tourController.postTour);
+.post(tourController.postTour);
 // app.get('/api/v1/tours',getAllTours);
 // app.post('/api/v1/tours',postTour);
 router.route('/:id').get(tourController.getTour)
