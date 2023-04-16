@@ -113,7 +113,7 @@ exports.createTour=(req,res)=>{
         message:'this route is not yet defined'
     })
 };
-exports.UpdateTour=async (req,res)=>{
+exports.UpdateTour=async (req,res)=>{ //not working for some reason
     try{
         const tour=await Tour.findByIdAndUpdate(req.params.id,req.body,{
             new:true,
