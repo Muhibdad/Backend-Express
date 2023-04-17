@@ -5,12 +5,12 @@ const morgan=require('morgan');
 
 // if(process.env.NODE_ENV==='development'){
 // app.use(morgan('dev'));
-// }
+// }  //Not using this
 
 const tourRouter=require('./Routes/TourRoutes');
 const userRouter=require('./Routes/UserRoutes');
 
-////1.MIDDLEWARES
+//1.MIDDLEWARES
 
 
 app.use(express.json()); //Middleware
